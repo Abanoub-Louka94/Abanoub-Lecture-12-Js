@@ -1,19 +1,26 @@
 function Button(background_color, text_color, text) {
     this.background_color = background_color,
     this.text_color = text_color,
-    this.text = text
+    this.text = text,
+
+    Button.prototype.setBgColor = function(background_color) {
+        return this.background_color = background_color
+    },
+    
+    Button.prototype.setTextColor = function(text_color) {
+        return this.text_color = text_color
+    },
+    
+    Button.prototype.setText = function(text) {
+        return this.text = text
+    };
+
 };
 
-Button.prototype.setBgColor = function() {
-    return '#192a56'
-};
 
-Button.prototype.setTextColor = function() {
-    return '#f5f6fa'
-};
+let downloadButton = new Button('#273c75', '#dcdde1', 'submit');
 
-Button.prototype.setText = function() {
-    return this.button.text = 'click me'
-};
+let uploadButton = new Button('#273c75', '#dcdde1', 'submit');
 
-let myButton = new Button('#273c75', '#dcdde1', 'submit');
+
+
