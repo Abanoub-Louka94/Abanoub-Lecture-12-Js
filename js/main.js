@@ -16,11 +16,11 @@ function Button(background_color, text_color, text) {
     };
 };
 
-let downloadButton = new Button('#8c7ae6', '#dcdde1', 'download');
+let downloadButton = new Button('#8c7ae6', 'white', 'download');
 
-let uploadButton = new Button('#4cd137', '#dcdde1', 'upload');
+let uploadButton = new Button('#4cd137', 'white', 'upload');
 
-let clickButton = new Button('#e84118', '#dcdde1', 'click');
+let clickButton = new Button('#e84118', 'white', 'click');
 
 
 // creating container
@@ -67,7 +67,7 @@ buttonsContainer.appendChild(dButton);
 
 dButton.innerText = downloadButton.text;
 
-dButton.style.color = downloadButton.color;
+dButton.style.color = downloadButton.text_color;
 
 dButton.style.backgroundColor = downloadButton.background_color;
 
@@ -82,7 +82,7 @@ buttonsContainer.appendChild(upButton);
 
 upButton.innerText = uploadButton.text;
 
-upButton.style.color = uploadButton.color;
+upButton.style.color = uploadButton.text_color;
 
 upButton.style.backgroundColor = uploadButton.background_color;
 
@@ -97,7 +97,7 @@ buttonsContainer.appendChild(cButton);
 
 cButton.innerText = clickButton.text;
 
-cButton.style.color = clickButton.color;
+cButton.style.color = clickButton.text_color;
 
 cButton.style.backgroundColor = clickButton.background_color
 
