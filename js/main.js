@@ -14,12 +14,13 @@ function Button(background_color, text_color, text) {
     Button.prototype.setText = function(text) {
         return this.text = text
     };
-
 };
 
-let downloadButton = new Button('#273c75', '#dcdde1', 'submit');
+let downloadButton = new Button('#8c7ae6', '#dcdde1', 'download');
 
-let uploadButton = new Button('#273c75', '#dcdde1', 'submit');
+let uploadButton = new Button('#4cd137', '#dcdde1', 'upload');
+
+let clickButton = new Button('#e84118', '#dcdde1', 'click');
 
 
 // creating container
@@ -49,4 +50,54 @@ buttonsContainer.classList.add('buttons-container');
 
 document.body.appendChild(buttonsContainer);
 
-container.appendChild(buttonContainer);
+container.appendChild(buttonsContainer);
+
+
+
+// ------------------ creating buttons ----------------
+
+// download button
+const dButton = document.createElement('button');
+
+dButton.classList.add('download');
+
+document.body.appendChild(dButton);
+
+buttonsContainer.appendChild(dButton);
+
+dButton.innerText = downloadButton.text;
+
+dButton.style.color = downloadButton.color;
+
+dButton.style.backgroundColor = downloadButton.background_color;
+
+// upload button
+const upButton = document.createElement('button');
+
+upButton.classList.add('upload');
+
+document.body.appendChild(upButton);
+
+buttonsContainer.appendChild(upButton);
+
+upButton.innerText = uploadButton.text;
+
+upButton.style.color = uploadButton.color;
+
+upButton.style.backgroundColor = uploadButton.background_color;
+
+// click button
+const cButton = document.createElement('button');
+
+cButton.classList.add('click');
+
+document.body.appendChild(cButton);
+
+buttonsContainer.appendChild(cButton);
+
+cButton.innerText = clickButton.text;
+
+cButton.style.color = clickButton.color;
+
+cButton.style.backgroundColor = clickButton.background_color
+

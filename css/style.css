@@ -4,12 +4,32 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(to right, #0c97fa 30%, #16e1f5);
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.header {
+    color: white;
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
-    width: 50%;
-    background-color: blueviolet;
+    margin: 100px auto;
+    width: 50%;row-gap: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
